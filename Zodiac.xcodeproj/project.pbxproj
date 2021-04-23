@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1414253D2632C65900DC9735 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1414253C2632C65900DC9735 /* Person.swift */; };
+		141425402632C68500DC9735 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1414253F2632C68500DC9735 /* DataManager.swift */; };
 		18398E562632B4FE00FBE2FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398E552632B4FE00FBE2FE /* AppDelegate.swift */; };
 		18398E582632B4FE00FBE2FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398E572632B4FE00FBE2FE /* SceneDelegate.swift */; };
 		18398E5A2632B4FE00FBE2FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398E592632B4FE00FBE2FE /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1414253C2632C65900DC9735 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		1414253F2632C68500DC9735 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Zodiac/Models/DataManager.swift; sourceTree = SOURCE_ROOT; };
 		18398E522632B4FE00FBE2FE /* Zodiac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zodiac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18398E552632B4FE00FBE2FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18398E572632B4FE00FBE2FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 		141425382632C26900DC9735 /* Data Managers */ = {
 			isa = PBXGroup;
 			children = (
+				1414253F2632C68500DC9735 /* DataManager.swift */,
 			);
 			name = "Data Managers";
 			path = "Models/Data Managers";
@@ -64,6 +69,7 @@
 		141425392632C27E00DC9735 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1414253C2632C65900DC9735 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,7 +193,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18398E5A2632B4FE00FBE2FE /* ViewController.swift in Sources */,
+				141425402632C68500DC9735 /* DataManager.swift in Sources */,
 				18398E562632B4FE00FBE2FE /* AppDelegate.swift in Sources */,
+				1414253D2632C65900DC9735 /* Person.swift in Sources */,
 				18398E582632B4FE00FBE2FE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

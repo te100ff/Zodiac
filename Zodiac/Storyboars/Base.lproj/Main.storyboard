@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,8 @@
                                 <rect key="frame" x="132" y="714" width="150" height="100"/>
                                 <color key="backgroundColor" red="0.1152368039" green="0.64461179120000001" blue="0.1683243039" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="RWD-CO-Vbf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="RWD-CO-Vbf"/>
+                                    <constraint firstAttribute="width" secondItem="HrS-si-ktR" secondAttribute="height" multiplier="3:2" id="frW-NW-H4i"/>
                                     <constraint firstAttribute="height" constant="100" id="tfB-Sv-TRU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
@@ -89,6 +90,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HrS-si-ktR" secondAttribute="bottom" constant="48" id="vNa-qe-EOR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="birthdayTF" destination="XMf-2o-bl5" id="dWR-Jf-IQE"/>
+                        <outlet property="lastNameTF" destination="VuC-En-Vd7" id="Kyq-4G-7Li"/>
+                        <outlet property="nameTF" destination="K1K-M0-zj1" id="H2d-V5-Thu"/>
+                        <outlet property="okButton" destination="HrS-si-ktR" id="NJo-47-gMV"/>
+                        <outletCollection property="fieldLabels" destination="2Gz-Zn-aFI" collectionClass="NSMutableArray" id="MLJ-uh-iyB"/>
+                        <outletCollection property="fieldLabels" destination="5Qz-Do-qaf" collectionClass="NSMutableArray" id="hy4-iB-HNd"/>
+                        <outletCollection property="fieldLabels" destination="k53-xa-FL1" collectionClass="NSMutableArray" id="tXY-Sv-vEW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

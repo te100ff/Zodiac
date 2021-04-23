@@ -31,6 +31,9 @@
                                         <color key="backgroundColor" red="1" green="0.77098784340000004" blue="0.19423889829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="E0c-bP-R0D"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Qz-Do-qaf">
                                         <rect key="frame" x="0.0" y="167" width="382" height="51.5"/>
@@ -44,6 +47,9 @@
                                         <color key="backgroundColor" red="1" green="0.77098784340000004" blue="0.19423889829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="85Q-Ee-x9C"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="k53-xa-FL1">
                                         <rect key="frame" x="0.0" y="334" width="382" height="51.5"/>
@@ -57,6 +63,9 @@
                                         <color key="backgroundColor" red="1" green="0.77098784340000004" blue="0.19423889829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="3Q8-Rh-vJR"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -76,6 +85,7 @@
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="okButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8YM-GF-2uh"/>
                                     <segue destination="p7d-gH-gLb" kind="presentation" modalPresentationStyle="fullScreen" id="5Su-8a-LzK"/>
                                 </connections>
                             </button>

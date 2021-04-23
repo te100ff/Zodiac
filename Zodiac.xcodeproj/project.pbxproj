@@ -40,6 +40,7 @@
 		141425332632C18300DC9735 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				18398E592632B4FE00FBE2FE /* ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -47,6 +48,7 @@
 		141425372632C22100DC9735 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				18398E5E2632B4FF00FBE2FE /* Assets.xcassets */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = "Data Managers";
+			name = "Data Managers";
+			path = "Models/Data Managers";
 			sourceTree = "<group>";
 		};
 		141425392632C27E00DC9735 /* Models */ = {
@@ -68,6 +71,8 @@
 		1414253A2632C29900DC9735 /* Storyboars */ = {
 			isa = PBXGroup;
 			children = (
+				18398E5B2632B4FE00FBE2FE /* Main.storyboard */,
+				18398E602632B4FF00FBE2FE /* LaunchScreen.storyboard */,
 			);
 			path = Storyboars;
 			sourceTree = "<group>";
@@ -91,20 +96,24 @@
 		18398E542632B4FE00FBE2FE /* Zodiac */ = {
 			isa = PBXGroup;
 			children = (
-				18398E552632B4FE00FBE2FE /* AppDelegate.swift */,
 				141425332632C18300DC9735 /* ViewControllers */,
-				18398E572632B4FE00FBE2FE /* SceneDelegate.swift */,
-				18398E592632B4FE00FBE2FE /* ViewController.swift */,
 				1414253A2632C29900DC9735 /* Storyboars */,
 				141425392632C27E00DC9735 /* Models */,
 				141425382632C26900DC9735 /* Data Managers */,
 				141425372632C22100DC9735 /* Resourses */,
-				18398E5B2632B4FE00FBE2FE /* Main.storyboard */,
-				18398E5E2632B4FF00FBE2FE /* Assets.xcassets */,
-				18398E602632B4FF00FBE2FE /* LaunchScreen.storyboard */,
-				18398E632632B4FF00FBE2FE /* Info.plist */,
+				18398E6D2632C50700FBE2FE /* Support */,
 			);
 			path = Zodiac;
+			sourceTree = "<group>";
+		};
+		18398E6D2632C50700FBE2FE /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				18398E632632B4FF00FBE2FE /* Info.plist */,
+				18398E572632B4FE00FBE2FE /* SceneDelegate.swift */,
+				18398E552632B4FE00FBE2FE /* AppDelegate.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

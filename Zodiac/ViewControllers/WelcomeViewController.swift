@@ -25,8 +25,9 @@ class WelcomeViewController: UIViewController {
     
 
     @IBAction func exitButtonAction(_ sender: Any) {
+        //performSegue(withIdentifier: "main", sender: exitButton)
         dismiss(animated: true)
-        delegate.clearFields(fields: )
+        delegate.clearFields()
     }
 
 }

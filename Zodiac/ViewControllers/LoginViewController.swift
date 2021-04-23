@@ -8,7 +8,7 @@
 import UIKit
 // MARK: - Protocol
 protocol WelcomeViewControllerDelegate {
-    func clearFields(fields: UITextField...)
+    func clearFields()
 }
 
 class LoginViewController: UIViewController {
@@ -52,6 +52,7 @@ class LoginViewController: UIViewController {
         for viewController in viewControlers {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.person = person
+                welcomeVC.delegate = self
             } else if let aboutVC = viewController as? AboutViewController {
 //                aboutVC.person = person
             } else if let zodiacVC = viewController as? ZodiacViewController {
@@ -205,12 +206,10 @@ extension LoginViewController {
 }
 
 extension LoginViewController: WelcomeViewControllerDelegate {
-    func clearFields(fields: UITextField...) {
-        fields = [nameTF, lastNameTF, birthdayTF]
-        for field in fields {
-            field.text = ""
-        }
-       
+    func clearFields() {
+        nameTF.text = ""
+        lastNameTF.text = ""
+        birthdayTF.text = ""       
     }
     
     

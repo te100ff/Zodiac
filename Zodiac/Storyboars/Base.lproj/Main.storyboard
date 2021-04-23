@@ -86,7 +86,7 @@
                                 </state>
                                 <connections>
                                     <action selector="okButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8YM-GF-2uh"/>
-                                    <segue destination="p7d-gH-gLb" kind="presentation" modalPresentationStyle="fullScreen" id="5Su-8a-LzK"/>
+                                    <segue destination="p7d-gH-gLb" kind="presentation" identifier="main" modalPresentationStyle="fullScreen" id="5Su-8a-LzK"/>
                                 </connections>
                             </button>
                         </subviews>

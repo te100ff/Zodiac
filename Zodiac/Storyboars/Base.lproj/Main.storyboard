@@ -107,7 +107,7 @@
         <!--Item 2-->
         <scene sceneID="6aO-Fm-FKH">
             <objects>
-                <viewController id="szW-to-HQx" sceneMemberID="viewController">
+                <viewController id="szW-to-HQx" customClass="AboutViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lMY-S0-Xka">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,6 +212,18 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="f5N-HT-PUB"/>
+                    <connections>
+                        <outlet property="informationLabel" destination="V8u-xA-30e" id="6zE-2w-rp1"/>
+                        <outlet property="zodiacImageView" destination="nqn-gF-VIy" id="bMb-tO-Hv4"/>
+                        <outletCollection property="aboutUserCollection" destination="A5n-t9-2fV" collectionClass="NSMutableArray" id="CPc-Bg-jrt"/>
+                        <outletCollection property="aboutUserCollection" destination="9yC-zI-z0E" collectionClass="NSMutableArray" id="3Gy-Q2-KLJ"/>
+                        <outletCollection property="aboutUserCollection" destination="unI-Fl-z3Y" collectionClass="NSMutableArray" id="eBG-sx-CHE"/>
+                        <outletCollection property="aboutUserCollection" destination="y86-4r-oD0" collectionClass="NSMutableArray" id="vnq-AO-owl"/>
+                        <outletCollection property="aboutUserCollectionInfo" destination="hG5-DH-HNg" collectionClass="NSMutableArray" id="vqB-b5-weK"/>
+                        <outletCollection property="aboutUserCollectionInfo" destination="qQO-z2-32Q" collectionClass="NSMutableArray" id="pyz-Jq-YOK"/>
+                        <outletCollection property="aboutUserCollectionInfo" destination="gLl-7L-re9" collectionClass="NSMutableArray" id="f6I-Kb-ta9"/>
+                        <outletCollection property="aboutUserCollectionInfo" destination="pjx-pP-ojf" collectionClass="NSMutableArray" id="0FF-u9-hru"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7KT-9J-cFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -220,7 +232,7 @@
         <!--Item-->
         <scene sceneID="gu8-Un-zfZ">
             <objects>
-                <viewController id="jhL-vE-nxt" sceneMemberID="viewController">
+                <viewController id="jhL-vE-nxt" customClass="ZodiacViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hzR-HF-NLD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,6 +265,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Tq0-in-8ah"/>
+                    <connections>
+                        <outlet property="zodiacDescriptionTextView" destination="iAy-D9-7AO" id="GRE-1j-GXC"/>
+                        <outlet property="zodiacLabel" destination="irL-nG-oyd" id="Bzj-vT-Q8x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PDI-Qu-0qW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,7 +277,7 @@
         <!--Root View Controller-->
         <scene sceneID="h8A-XK-I0r">
             <objects>
-                <tableViewController id="99G-8n-MLZ" sceneMemberID="viewController">
+                <tableViewController id="99G-8n-MLZ" customClass="FriendsTableViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="k8g-lD-CKv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,10 +306,10 @@
             </objects>
             <point key="canvasLocation" x="329" y="1021"/>
         </scene>
-        <!--View Controller-->
+        <!--About Friend View Controller-->
         <scene sceneID="1aR-HQ-Myj">
             <objects>
-                <viewController id="JCC-X3-6sS" sceneMemberID="viewController">
+                <viewController id="JCC-X3-6sS" customClass="AboutFriendViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qau-ym-ikC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -346,6 +362,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="diY-4b-f2D"/>
+                    <connections>
+                        <outlet property="zodiacDescrtiptionTextView" destination="kqi-lv-Psh" id="olO-jL-BVf"/>
+                        <outletCollection property="aboutFriendCollectionLabel" destination="698-Pj-sUl" collectionClass="NSMutableArray" id="Wjv-sF-RYu"/>
+                        <outletCollection property="aboutFriendCollectionLabel" destination="zo5-ah-gNl" collectionClass="NSMutableArray" id="rvz-ZB-kq6"/>
+                        <outletCollection property="aboutFriendCollectionLabel" destination="Kk3-aQ-8Sp" collectionClass="NSMutableArray" id="P4O-qu-eWa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVz-7t-IM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -371,7 +393,7 @@
         <!--Item 1-->
         <scene sceneID="yuL-uQ-DMv">
             <objects>
-                <viewController id="Rq9-It-SVG" sceneMemberID="viewController">
+                <viewController id="Rq9-It-SVG" customClass="WelcomeViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hm0-eK-RHR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -401,6 +423,9 @@
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="Выход"/>
+                                <connections>
+                                    <action selector="exitButtonAction:" destination="Rq9-It-SVG" eventType="touchUpInside" id="i4W-Iy-4pB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Sa-Qq-eRr"/>
@@ -414,6 +439,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="pbA-my-1rz"/>
+                    <connections>
+                        <outlet property="exitButton" destination="z17-DX-HRF" id="BA6-cC-s1b"/>
+                        <outlet property="fullNameLabel" destination="5TF-gZ-KU7" id="cph-ee-bFk"/>
+                        <outlet property="welcomeText" destination="TYI-Sv-IHQ" id="6mV-eL-okj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLt-oT-QdV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

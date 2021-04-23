@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		1414253D2632C65900DC9735 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1414253C2632C65900DC9735 /* Person.swift */; };
 		141425402632C68500DC9735 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1414253F2632C68500DC9735 /* DataManager.swift */; };
+		141425442633298900DC9735 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141425432633298900DC9735 /* WelcomeViewController.swift */; };
+		14142547263329BF00DC9735 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14142546263329BF00DC9735 /* AboutViewController.swift */; };
+		1414254A263329E300DC9735 /* ZodiacViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14142549263329E300DC9735 /* ZodiacViewController.swift */; };
+		1414254D26332A1900DC9735 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1414254C26332A1900DC9735 /* FriendsTableViewController.swift */; };
+		1414255026332A4100DC9735 /* AboutFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1414254F26332A4100DC9735 /* AboutFriendViewController.swift */; };
 		18398E562632B4FE00FBE2FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398E552632B4FE00FBE2FE /* AppDelegate.swift */; };
 		18398E582632B4FE00FBE2FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398E572632B4FE00FBE2FE /* SceneDelegate.swift */; };
 		18398E5A2632B4FE00FBE2FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398E592632B4FE00FBE2FE /* ViewController.swift */; };
@@ -21,6 +26,11 @@
 /* Begin PBXFileReference section */
 		1414253C2632C65900DC9735 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1414253F2632C68500DC9735 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Zodiac/Models/DataManager.swift; sourceTree = SOURCE_ROOT; };
+		141425432633298900DC9735 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		14142546263329BF00DC9735 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		14142549263329E300DC9735 /* ZodiacViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacViewController.swift; sourceTree = "<group>"; };
+		1414254C26332A1900DC9735 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		1414254F26332A4100DC9735 /* AboutFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFriendViewController.swift; sourceTree = "<group>"; };
 		18398E522632B4FE00FBE2FE /* Zodiac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zodiac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18398E552632B4FE00FBE2FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18398E572632B4FE00FBE2FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +58,11 @@
 			children = (
 				18398E592632B4FE00FBE2FE /* ViewController.swift */,
 				18C5479026331AE400E8E72B /* LoginViewController.swift */,
+				141425432633298900DC9735 /* WelcomeViewController.swift */,
+				14142549263329E300DC9735 /* ZodiacViewController.swift */,
+				1414254C26332A1900DC9735 /* FriendsTableViewController.swift */,
+				1414254F26332A4100DC9735 /* AboutFriendViewController.swift */,
+				14142546263329BF00DC9735 /* AboutViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -199,8 +214,13 @@
 				18398E5A2632B4FE00FBE2FE /* ViewController.swift in Sources */,
 				141425402632C68500DC9735 /* DataManager.swift in Sources */,
 				18398E562632B4FE00FBE2FE /* AppDelegate.swift in Sources */,
+				1414254D26332A1900DC9735 /* FriendsTableViewController.swift in Sources */,
+				1414255026332A4100DC9735 /* AboutFriendViewController.swift in Sources */,
 				1414253D2632C65900DC9735 /* Person.swift in Sources */,
 				18398E582632B4FE00FBE2FE /* SceneDelegate.swift in Sources */,
+				14142547263329BF00DC9735 /* AboutViewController.swift in Sources */,
+				141425442633298900DC9735 /* WelcomeViewController.swift in Sources */,
+				1414254A263329E300DC9735 /* ZodiacViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

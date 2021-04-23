@@ -19,10 +19,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="bEq-Mg-CJM">
                                 <rect key="frame" x="16" y="84" width="382" height="469"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gz-Zn-aFI">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Gz-Zn-aFI">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="51.5"/>
                                         <color key="backgroundColor" red="0.59797537219999997" green="0.82613370289999999" blue="0.827829072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -32,10 +32,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qz-Do-qaf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Qz-Do-qaf">
                                         <rect key="frame" x="0.0" y="167" width="382" height="51.5"/>
                                         <color key="backgroundColor" red="0.59797537219999997" green="0.82613370289999999" blue="0.827829072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -45,10 +45,10 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k53-xa-FL1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="k53-xa-FL1">
                                         <rect key="frame" x="0.0" y="334" width="382" height="51.5"/>
                                         <color key="backgroundColor" red="0.59797537219999997" green="0.82613370289999999" blue="0.827829072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -64,14 +64,14 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrS-si-ktR">
-                                <rect key="frame" x="157" y="714" width="100" height="100"/>
+                                <rect key="frame" x="132" y="714" width="150" height="100"/>
                                 <color key="backgroundColor" red="0.1152368039" green="0.64461179120000001" blue="0.1683243039" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="RWD-CO-Vbf"/>
+                                    <constraint firstAttribute="width" constant="150" id="RWD-CO-Vbf"/>
                                     <constraint firstAttribute="height" constant="100" id="tfB-Sv-TRU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <state key="normal" title="GO!">
+                                <state key="normal" title="Вперёд!">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                 </state>
                                 <connections>
@@ -198,14 +198,49 @@
                     <view key="view" contentMode="scaleToFill" id="hm0-eK-RHR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="8Dj-l4-uzf">
+                                <rect key="frame" x="32" y="108" width="350" height="209.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя Фамилия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TF-gZ-KU7">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="36"/>
+                                        <color key="backgroundColor" red="1" green="0.77098784340000004" blue="0.19423889829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYI-Sv-IHQ">
+                                        <rect key="frame" x="0.0" y="67" width="350" height="142.5"/>
+                                        <color key="backgroundColor" red="0.59797537219999997" green="0.82613370289999999" blue="0.827829072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <string key="text">Приветсвенный текст Приветсвенный текстПриветсвенный текстПриветсвенный текстПриветсвенный текстПриветсвенный текстПриветсвенный текстПриветсвенный текстПриветсвенный текстПриветсвенный текстПриветсвенный текстПриветсвенный текстПриветсвенный текст</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z17-DX-HRF">
+                                <rect key="frame" x="168.5" y="740" width="77" height="41"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Выход"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2Sa-Qq-eRr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z17-DX-HRF" firstAttribute="centerX" secondItem="hm0-eK-RHR" secondAttribute="centerX" id="0eg-Tx-dVZ"/>
+                            <constraint firstItem="8Dj-l4-uzf" firstAttribute="top" secondItem="2Sa-Qq-eRr" secondAttribute="top" constant="64" id="5Kx-Gk-7zC"/>
+                            <constraint firstItem="2Sa-Qq-eRr" firstAttribute="bottom" secondItem="z17-DX-HRF" secondAttribute="bottom" constant="32" id="Gsm-nq-k6c"/>
+                            <constraint firstItem="2Sa-Qq-eRr" firstAttribute="trailing" secondItem="8Dj-l4-uzf" secondAttribute="trailing" constant="32" id="Q6Q-7P-Pn7"/>
+                            <constraint firstItem="8Dj-l4-uzf" firstAttribute="leading" secondItem="2Sa-Qq-eRr" secondAttribute="leading" constant="32" id="ms7-6P-8vg"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="pbA-my-1rz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLt-oT-QdV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329" y="-998"/>
+            <point key="canvasLocation" x="327.536231884058" y="-998.4375"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tjU-Xv-WAB">
@@ -234,6 +269,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

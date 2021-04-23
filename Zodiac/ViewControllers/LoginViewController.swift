@@ -206,9 +206,11 @@ extension LoginViewController {
 
 extension LoginViewController: WelcomeViewControllerDelegate {
     func clearFields(fields: UITextField...) {
+        fields = [nameTF, lastNameTF, birthdayTF]
         for field in fields {
             field.text = ""
         }
+       
     }
     
     

@@ -15,6 +15,7 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var exitButton: UIButton!
     
     var person: Person!
+    var delegate: WelcomeViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,8 @@ class WelcomeViewController: UIViewController {
     
 
     @IBAction func exitButtonAction(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true)
+        delegate.clearFields(fields: )
     }
 
 }

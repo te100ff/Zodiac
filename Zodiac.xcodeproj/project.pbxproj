@@ -37,6 +37,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141425332632C18300DC9735 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		141425372632C22100DC9735 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		141425382632C26900DC9735 /* Data Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Managers";
+			sourceTree = "<group>";
+		};
+		141425392632C27E00DC9735 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1414253A2632C29900DC9735 /* Storyboars */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboars;
+			sourceTree = "<group>";
+		};
 		18398E492632B4FE00FBE2FE = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +92,13 @@
 			isa = PBXGroup;
 			children = (
 				18398E552632B4FE00FBE2FE /* AppDelegate.swift */,
+				141425332632C18300DC9735 /* ViewControllers */,
 				18398E572632B4FE00FBE2FE /* SceneDelegate.swift */,
 				18398E592632B4FE00FBE2FE /* ViewController.swift */,
+				1414253A2632C29900DC9735 /* Storyboars */,
+				141425392632C27E00DC9735 /* Models */,
+				141425382632C26900DC9735 /* Data Managers */,
+				141425372632C22100DC9735 /* Resourses */,
 				18398E5B2632B4FE00FBE2FE /* Main.storyboard */,
 				18398E5E2632B4FF00FBE2FE /* Assets.xcassets */,
 				18398E602632B4FF00FBE2FE /* LaunchScreen.storyboard */,

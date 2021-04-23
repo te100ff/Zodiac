@@ -287,14 +287,59 @@
                     <view key="view" contentMode="scaleToFill" id="qau-ym-ikC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="zhL-Ae-m4C">
+                                <rect key="frame" x="16" y="104" width="382" height="160"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя фамилия друга" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="698-Pj-sUl">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="36"/>
+                                        <color key="backgroundColor" red="0.1264566802" green="0.70737355030000004" blue="0.18471297310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения друга" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zo5-ah-gNl">
+                                        <rect key="frame" x="0.0" y="62" width="382" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Знак зодиака" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kk3-aQ-8Sp">
+                                        <rect key="frame" x="0.0" y="124" width="382" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kqi-lv-Psh">
+                                <rect key="frame" x="16" y="280" width="382" height="517"/>
+                                <color key="backgroundColor" red="0.022987037897109985" green="0.96610969305038452" blue="0.75639528036117554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="rWf-3i-zlR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kqi-lv-Psh" firstAttribute="leading" secondItem="rWf-3i-zlR" secondAttribute="leading" constant="16" id="Ddh-SV-vvD"/>
+                            <constraint firstItem="zhL-Ae-m4C" firstAttribute="top" secondItem="rWf-3i-zlR" secondAttribute="top" constant="16" id="EBw-xw-E4L"/>
+                            <constraint firstItem="zhL-Ae-m4C" firstAttribute="leading" secondItem="rWf-3i-zlR" secondAttribute="leading" constant="16" id="U3h-RL-TMi"/>
+                            <constraint firstItem="rWf-3i-zlR" firstAttribute="trailing" secondItem="kqi-lv-Psh" secondAttribute="trailing" constant="16" id="bkX-OE-lJZ"/>
+                            <constraint firstItem="kqi-lv-Psh" firstAttribute="top" secondItem="zhL-Ae-m4C" secondAttribute="bottom" constant="16" id="gWw-eT-uNV"/>
+                            <constraint firstItem="rWf-3i-zlR" firstAttribute="trailing" secondItem="zhL-Ae-m4C" secondAttribute="trailing" constant="16" id="pua-ai-Q3p"/>
+                            <constraint firstItem="rWf-3i-zlR" firstAttribute="bottom" secondItem="kqi-lv-Psh" secondAttribute="bottom" constant="16" id="vpt-0S-tdf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="diY-4b-f2D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVz-7t-IM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="1021"/>
+            <point key="canvasLocation" x="1128.985507246377" y="1020.5357142857142"/>
         </scene>
         <!--Item-->
         <scene sceneID="nvQ-zp-h4E">
@@ -392,6 +437,12 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

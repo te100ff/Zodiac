@@ -6,6 +6,10 @@
 //
 
 import UIKit
+// MARK: - Protocol
+protocol WelcomeViewControllerDelegate {
+    func clearFields(fields: UITextField...)
+}
 
 class LoginViewController: UIViewController {
     // MARK: - IB Outlets
@@ -31,6 +35,7 @@ class LoginViewController: UIViewController {
     }
     
     
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let person = Person(
@@ -46,7 +51,7 @@ class LoginViewController: UIViewController {
 //        Раскомментируйте область своего VC
         for viewController in viewControlers {
             if let welcomeVC = viewController as? WelcomeViewController {
-//                welcomeVC.person = person
+                welcomeVC.person = person
             } else if let aboutVC = viewController as? AboutViewController {
 //                aboutVC.person = person
             } else if let zodiacVC = viewController as? ZodiacViewController {
@@ -61,6 +66,11 @@ class LoginViewController: UIViewController {
     
     @IBAction func okButtonPressed(_ sender: Any) {
         okPressed(textFields: nameTF, lastNameTF, birthdayTF)
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        guard let _ = segue.source as? WelcomeViewController else { return }
+        nameTF.text = ""
     }
     
     // MARK: - Private methods (button pressed, alert)
@@ -191,5 +201,15 @@ extension LoginViewController {
         textField.layer.shadowRadius = 10
         textField.layer.shadowColor = #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)
     }
+    
+}
+
+extension LoginViewController: WelcomeViewControllerDelegate {
+    func clearFields(fields: UITextField...) {
+        for field in fields {
+            field.text = ""
+        }
+    }
+    
     
 }

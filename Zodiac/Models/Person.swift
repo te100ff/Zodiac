@@ -13,6 +13,10 @@ struct Person {
     let dayOfBirth: String
     let dateOfBirth: Date
     
+    var fullName: String {
+        return "\(name) \(lastName)"
+    }
+    
     var zodiac: ZodiacSign {
         ZodiacSign(rawValue: getZodiak(dayOfBirth: dateOfBirth))!
     }

@@ -20,12 +20,11 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fullNameLabel.text = person.fullName
-        // Do any additional setup after loading the view.
+        
     }
     
 
     @IBAction func exitButtonAction(_ sender: Any) {
-        //performSegue(withIdentifier: "main", sender: exitButton)
         dismiss(animated: true)
         delegate.clearFields()
     }

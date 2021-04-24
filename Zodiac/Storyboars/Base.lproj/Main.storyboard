@@ -114,7 +114,7 @@
             </objects>
             <point key="canvasLocation" x="-1284.0579710144928" y="45.535714285714285"/>
         </scene>
-        <!--Item 2-->
+        <!--Инфо-->
         <scene sceneID="6aO-Fm-FKH">
             <objects>
                 <viewController id="szW-to-HQx" customClass="AboutViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
@@ -221,7 +221,7 @@
                             <constraint firstAttribute="trailing" secondItem="W6R-ZY-JcN" secondAttribute="trailing" constant="16" id="u54-R3-bfd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="f5N-HT-PUB"/>
+                    <tabBarItem key="tabBarItem" title="Инфо" image="info.circle.fill" catalog="system" id="f5N-HT-PUB"/>
                     <connections>
                         <outlet property="informationLabel" destination="V8u-xA-30e" id="6zE-2w-rp1"/>
                         <outlet property="zodiacImageView" destination="nqn-gF-VIy" id="bMb-tO-Hv4"/>
@@ -239,7 +239,7 @@
             </objects>
             <point key="canvasLocation" x="328.98550724637681" y="-338.16964285714283"/>
         </scene>
-        <!--Item-->
+        <!--Знак-->
         <scene sceneID="gu8-Un-zfZ">
             <objects>
                 <viewController id="jhL-vE-nxt" customClass="ZodiacViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
@@ -274,7 +274,7 @@
                             <constraint firstItem="iAy-D9-7AO" firstAttribute="leading" secondItem="sEO-Re-zaY" secondAttribute="leading" constant="16" id="udO-M2-Lxc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Tq0-in-8ah"/>
+                    <tabBarItem key="tabBarItem" title="Знак" image="sparkles" catalog="system" id="Tq0-in-8ah"/>
                     <connections>
                         <outlet property="zodiacDescriptionTextView" destination="iAy-D9-7AO" id="GRE-1j-GXC"/>
                         <outlet property="zodiacLabel" destination="irL-nG-oyd" id="Bzj-vT-Q8x"/>
@@ -383,11 +383,11 @@
             </objects>
             <point key="canvasLocation" x="1128.985507246377" y="1020.5357142857142"/>
         </scene>
-        <!--Item-->
+        <!--Друзья-->
         <scene sceneID="nvQ-zp-h4E">
             <objects>
                 <navigationController id="oHI-7v-cKw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1xj-sV-gJT"/>
+                    <tabBarItem key="tabBarItem" title="Друзья" image="person.3.fill" catalog="system" id="1xj-sV-gJT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="PHG-hN-6Tg">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -400,7 +400,7 @@
             </objects>
             <point key="canvasLocation" x="-517" y="1021"/>
         </scene>
-        <!--Item 1-->
+        <!--Старт-->
         <scene sceneID="yuL-uQ-DMv">
             <objects>
                 <viewController id="Rq9-It-SVG" customClass="WelcomeViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
@@ -449,7 +449,7 @@
                             <constraint firstItem="8Dj-l4-uzf" firstAttribute="leading" secondItem="2Sa-Qq-eRr" secondAttribute="leading" constant="32" id="ms7-6P-8vg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="pbA-my-1rz"/>
+                    <tabBarItem key="tabBarItem" title="Старт" image="arrowtriangle.right.fill" catalog="system" id="pbA-my-1rz"/>
                     <connections>
                         <outlet property="exitButton" destination="z17-DX-HRF" id="BA6-cC-s1b"/>
                         <outlet property="fullNameLabel" destination="5TF-gZ-KU7" id="cph-ee-bFk"/>
@@ -483,6 +483,10 @@
     </scenes>
     <resources>
         <image name="aries_PNG11" width="700" height="745"/>
+        <image name="arrowtriangle.right.fill" catalog="system" width="128" height="113"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="sparkles" catalog="system" width="112" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

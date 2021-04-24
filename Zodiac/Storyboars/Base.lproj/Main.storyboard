@@ -224,15 +224,11 @@
                     <tabBarItem key="tabBarItem" title="Item 2" id="f5N-HT-PUB"/>
                     <connections>
                         <outlet property="informationLabel" destination="V8u-xA-30e" id="6zE-2w-rp1"/>
+                        <outlet property="personDateOfBirth" destination="gLl-7L-re9" id="HWq-zT-cYQ"/>
+                        <outlet property="personLastName" destination="qQO-z2-32Q" id="7l8-Gz-Qaf"/>
+                        <outlet property="personName" destination="hG5-DH-HNg" id="Ft6-oc-mjU"/>
+                        <outlet property="personZodiac" destination="pjx-pP-ojf" id="XrQ-nw-cd6"/>
                         <outlet property="zodiacImageView" destination="nqn-gF-VIy" id="bMb-tO-Hv4"/>
-                        <outletCollection property="aboutUserCollection" destination="A5n-t9-2fV" collectionClass="NSMutableArray" id="CPc-Bg-jrt"/>
-                        <outletCollection property="aboutUserCollection" destination="9yC-zI-z0E" collectionClass="NSMutableArray" id="3Gy-Q2-KLJ"/>
-                        <outletCollection property="aboutUserCollection" destination="unI-Fl-z3Y" collectionClass="NSMutableArray" id="eBG-sx-CHE"/>
-                        <outletCollection property="aboutUserCollection" destination="y86-4r-oD0" collectionClass="NSMutableArray" id="vnq-AO-owl"/>
-                        <outletCollection property="aboutUserCollectionInfo" destination="hG5-DH-HNg" collectionClass="NSMutableArray" id="vqB-b5-weK"/>
-                        <outletCollection property="aboutUserCollectionInfo" destination="qQO-z2-32Q" collectionClass="NSMutableArray" id="pyz-Jq-YOK"/>
-                        <outletCollection property="aboutUserCollectionInfo" destination="gLl-7L-re9" collectionClass="NSMutableArray" id="f6I-Kb-ta9"/>
-                        <outletCollection property="aboutUserCollectionInfo" destination="pjx-pP-ojf" collectionClass="NSMutableArray" id="0FF-u9-hru"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7KT-9J-cFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

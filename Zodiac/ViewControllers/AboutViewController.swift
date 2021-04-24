@@ -10,8 +10,12 @@ import UIKit
 class AboutViewController: UIViewController {
     
     @IBOutlet weak var informationLabel: UILabel!
-    @IBOutlet var aboutUserCollection: [UILabel]!
-    @IBOutlet var aboutUserCollectionInfo: [UILabel]!
+    
+    @IBOutlet weak var personName: UILabel!
+    @IBOutlet weak var personLastName: UILabel!
+    @IBOutlet weak var personDateOfBirth: UILabel!
+    @IBOutlet weak var personZodiac: UILabel!
+    
     
     @IBOutlet weak var zodiacImageView: UIImageView!
     
@@ -25,7 +29,13 @@ class AboutViewController: UIViewController {
 
 extension AboutViewController {
     
-    private func setupUi() {
+    private func setupUI() {
         informationLabel.text = person.fullName
+        personName.text = person.name
+        personLastName.text = person.lastName
+        personDateOfBirth.text = person.dayOfBirth
+        
+        zodiacImageView.image = UIImage(named: String(person.zodiacEmoji))
+        
     }
 }

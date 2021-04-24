@@ -9,25 +9,27 @@ import UIKit
 
 class AboutFriendViewController: UIViewController {
     
-    @IBOutlet var aboutFriendCollectionLabel: [UILabel]!
+    @IBOutlet weak var friendNameLabel: UILabel!
+    @IBOutlet weak var friendBirthday: UILabel!
+    @IBOutlet weak var friendZodiac: UILabel!
     
     @IBOutlet weak var zodiacDescrtiptionTextView: UITextView!
     
+    var friend: Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupOutlets()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupOutlets() {
+        friendNameLabel.text = friend.fullName
+        friendBirthday.text = friend.dayOfBirth
+        friendZodiac.text = "\(friend.zodiacEmoji) \(friend.fullName)"
+        
+        zodiacDescrtiptionTextView.text = friend.zodiacDiscription
     }
-    */
-
 }
+
+

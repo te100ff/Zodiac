@@ -373,10 +373,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="diY-4b-f2D"/>
                     <connections>
+                        <outlet property="friendBirthday" destination="zo5-ah-gNl" id="qDV-vW-UWp"/>
+                        <outlet property="friendNameLabel" destination="698-Pj-sUl" id="yAV-80-xAQ"/>
+                        <outlet property="friendZodiac" destination="Kk3-aQ-8Sp" id="E1v-3L-3tk"/>
                         <outlet property="zodiacDescrtiptionTextView" destination="kqi-lv-Psh" id="olO-jL-BVf"/>
-                        <outletCollection property="aboutFriendCollectionLabel" destination="698-Pj-sUl" collectionClass="NSMutableArray" id="Wjv-sF-RYu"/>
-                        <outletCollection property="aboutFriendCollectionLabel" destination="zo5-ah-gNl" collectionClass="NSMutableArray" id="rvz-ZB-kq6"/>
-                        <outletCollection property="aboutFriendCollectionLabel" destination="Kk3-aQ-8Sp" collectionClass="NSMutableArray" id="P4O-qu-eWa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVz-7t-IM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

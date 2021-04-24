@@ -21,47 +21,50 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Gz-Zn-aFI">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="51.5"/>
-                                        <color key="backgroundColor" red="0.59797537219999997" green="0.82613370289999999" blue="0.827829072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="30"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.89741386094543296" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K1K-M0-zj1">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K1K-M0-zj1">
                                         <rect key="frame" x="0.0" y="83.5" width="382" height="51.5"/>
-                                        <color key="backgroundColor" red="1" green="0.77098784340000004" blue="0.19423889829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="E0c-bP-R0D"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Qz-Do-qaf">
                                         <rect key="frame" x="0.0" y="167" width="382" height="51.5"/>
-                                        <color key="backgroundColor" red="0.59797537219999997" green="0.82613370289999999" blue="0.827829072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="30"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.89741386094543296" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VuC-En-Vd7">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VuC-En-Vd7">
                                         <rect key="frame" x="0.0" y="250.5" width="382" height="51.5"/>
-                                        <color key="backgroundColor" red="1" green="0.77098784340000004" blue="0.19423889829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="85Q-Ee-x9C"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="k53-xa-FL1">
                                         <rect key="frame" x="0.0" y="334" width="382" height="51.5"/>
-                                        <color key="backgroundColor" red="0.59797537219999997" green="0.82613370289999999" blue="0.827829072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="30"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.89741386094543296" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XMf-2o-bl5">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XMf-2o-bl5">
                                         <rect key="frame" x="0.0" y="417.5" width="382" height="51.5"/>
-                                        <color key="backgroundColor" red="1" green="0.77098784340000004" blue="0.19423889829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="3Q8-Rh-vJR"/>
@@ -73,16 +76,14 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrS-si-ktR">
-                                <rect key="frame" x="132" y="714" width="150" height="100"/>
-                                <color key="backgroundColor" red="0.1152368039" green="0.64461179120000001" blue="0.1683243039" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="108" y="764" width="198" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="RWD-CO-Vbf"/>
-                                    <constraint firstAttribute="width" secondItem="HrS-si-ktR" secondAttribute="height" multiplier="3:2" id="frW-NW-H4i"/>
-                                    <constraint firstAttribute="height" constant="100" id="tfB-Sv-TRU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="155" id="RWD-CO-Vbf"/>
+                                    <constraint firstAttribute="height" constant="50" id="tfB-Sv-TRU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <state key="normal" title="Вперёд!">
-                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
                                 </state>
                                 <connections>
                                     <action selector="okButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8YM-GF-2uh"/>
@@ -408,30 +409,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="8Dj-l4-uzf">
-                                <rect key="frame" x="32" y="108" width="350" height="532.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя Фамилия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TF-gZ-KU7">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="36"/>
-                                        <color key="backgroundColor" red="1" green="0.77098784340000004" blue="0.19423889829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYI-Sv-IHQ">
-                                        <rect key="frame" x="0.0" y="67" width="350" height="465.5"/>
-                                        <color key="backgroundColor" red="0.59797537219999997" green="0.82613370289999999" blue="0.827829072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <string key="text">Узнай, что готовит для тебя будущее! Бесплатный гороскоп на каждый день предупредит об удачных событиях или надвигающихся неприятностях.
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Имя Фамилия" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TF-gZ-KU7">
+                                <rect key="frame" x="32" y="60" width="350" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="TYI-Sv-IHQ">
+                                <rect key="frame" x="16" y="112" width="382" height="619"/>
+                                <string key="text">Узнай, что готовит для тебя будущее! Бесплатный гороскоп на каждый день предупредит об удачных событиях или надвигающихся неприятностях.
 Следи за предсказаниями для своего знака и за гороскопами своих друзей! </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.827829072" green="0.62046398169999994" blue="0.21110134059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z17-DX-HRF">
-                                <rect key="frame" x="168.5" y="740" width="77" height="41"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <rect key="frame" x="167" y="747" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="HNR-U6-ASp"/>
+                                    <constraint firstAttribute="height" constant="50" id="z4g-Ke-LIb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="Выход"/>
                                 <connections>
@@ -440,13 +437,17 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Sa-Qq-eRr"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
-                            <constraint firstItem="z17-DX-HRF" firstAttribute="centerX" secondItem="hm0-eK-RHR" secondAttribute="centerX" id="0eg-Tx-dVZ"/>
-                            <constraint firstItem="8Dj-l4-uzf" firstAttribute="top" secondItem="2Sa-Qq-eRr" secondAttribute="top" constant="64" id="5Kx-Gk-7zC"/>
-                            <constraint firstItem="2Sa-Qq-eRr" firstAttribute="bottom" secondItem="z17-DX-HRF" secondAttribute="bottom" constant="32" id="Gsm-nq-k6c"/>
-                            <constraint firstItem="2Sa-Qq-eRr" firstAttribute="trailing" secondItem="8Dj-l4-uzf" secondAttribute="trailing" constant="32" id="Q6Q-7P-Pn7"/>
-                            <constraint firstItem="8Dj-l4-uzf" firstAttribute="leading" secondItem="2Sa-Qq-eRr" secondAttribute="leading" constant="32" id="ms7-6P-8vg"/>
+                            <constraint firstItem="2Sa-Qq-eRr" firstAttribute="bottom" secondItem="z17-DX-HRF" secondAttribute="bottom" constant="16" id="0qZ-na-59z"/>
+                            <constraint firstItem="TYI-Sv-IHQ" firstAttribute="leading" secondItem="2Sa-Qq-eRr" secondAttribute="leading" constant="16" id="3Rp-d7-9vy"/>
+                            <constraint firstItem="z17-DX-HRF" firstAttribute="top" secondItem="TYI-Sv-IHQ" secondAttribute="bottom" constant="16" id="4kC-kG-ncT"/>
+                            <constraint firstItem="z17-DX-HRF" firstAttribute="centerX" secondItem="hm0-eK-RHR" secondAttribute="centerX" id="aVC-5E-U0m"/>
+                            <constraint firstItem="2Sa-Qq-eRr" firstAttribute="trailing" secondItem="TYI-Sv-IHQ" secondAttribute="trailing" constant="16" id="isP-mj-JFB"/>
+                            <constraint firstItem="5TF-gZ-KU7" firstAttribute="leading" secondItem="2Sa-Qq-eRr" secondAttribute="leading" constant="32" id="mME-Ox-fp4"/>
+                            <constraint firstItem="5TF-gZ-KU7" firstAttribute="top" secondItem="2Sa-Qq-eRr" secondAttribute="top" constant="16" id="sgn-vp-FfJ"/>
+                            <constraint firstItem="2Sa-Qq-eRr" firstAttribute="trailing" secondItem="5TF-gZ-KU7" secondAttribute="trailing" constant="32" id="ydf-Ln-00r"/>
+                            <constraint firstItem="TYI-Sv-IHQ" firstAttribute="top" secondItem="5TF-gZ-KU7" secondAttribute="bottom" constant="16" id="zvf-dF-Q9w"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Старт" image="arrowtriangle.right.fill" catalog="system" id="pbA-my-1rz"/>
@@ -493,17 +494,17 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

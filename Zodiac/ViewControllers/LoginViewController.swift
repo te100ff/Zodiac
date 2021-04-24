@@ -28,9 +28,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        okButton.layer.cornerRadius = okButton.frame.height/2
         okButton.alpha = 0.3
-        // assignbackground()
+        assignbackground()
         labelsSetup()
     }
     
@@ -48,7 +47,7 @@ class LoginViewController: UIViewController {
         let tabVC = segue.destination as! UITabBarController
         
         guard let viewControlers = tabVC.viewControllers else { return }
-//        Раскомментируйте область своего VC
+        //        Раскомментируйте область своего VC
         for viewController in viewControlers {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.person = person
@@ -59,7 +58,7 @@ class LoginViewController: UIViewController {
                 zodiacVC.person = person
             }  else if let navigationVC = viewController as? UINavigationController {
                 let friendsVC = navigationVC.topViewController as! FriendsTableViewController
-//                friendsVC.person = person
+                //                friendsVC.person = person
             }
         }
     }
@@ -164,7 +163,11 @@ extension LoginViewController: UITextFieldDelegate  {
 extension LoginViewController {
     private func okButtonChange(textFields: UITextField... ) {
         for textField in textFields {
-            guard let text = textField.text, !text.isEmpty else { return }
+            guard let text = textField.text, !text.isEmpty else {
+                okButton.alpha = 0.3
+                okButton.layer.shadowOpacity = 0
+                return
+            }
             continue
         }
         okButton.layer.shadowOpacity = 1

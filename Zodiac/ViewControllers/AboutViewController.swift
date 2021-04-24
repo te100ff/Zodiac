@@ -23,6 +23,7 @@ class AboutViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
     }
     
 }
@@ -30,10 +31,12 @@ class AboutViewController: UIViewController {
 extension AboutViewController {
     
     private func setupUI() {
+        
         informationLabel.text = person.fullName
         personName.text = person.name
         personLastName.text = person.lastName
         personDateOfBirth.text = person.dayOfBirth
+        personZodiac.text = person.zodiac.rawValue
         
         zodiacImageView.image = UIImage(named: String(person.zodiacEmoji))
         

@@ -284,7 +284,7 @@
             </objects>
             <point key="canvasLocation" x="328.98550724637681" y="358.92857142857139"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Друзья-->
         <scene sceneID="h8A-XK-I0r">
             <objects>
                 <tableViewController id="99G-8n-MLZ" customClass="FriendsTableViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
@@ -310,7 +310,7 @@
                             <outlet property="delegate" destination="99G-8n-MLZ" id="UTz-Ih-ibK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="WY6-8v-qq2"/>
+                    <navigationItem key="navigationItem" title="Друзья" id="WY6-8v-qq2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCP-p8-o3m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -371,7 +371,7 @@
                             <constraint firstItem="rWf-3i-zlR" firstAttribute="bottom" secondItem="kqi-lv-Psh" secondAttribute="bottom" constant="16" id="vpt-0S-tdf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="diY-4b-f2D"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="diY-4b-f2D"/>
                     <connections>
                         <outlet property="friendBirthday" destination="zo5-ah-gNl" id="qDV-vW-UWp"/>
                         <outlet property="friendNameLabel" destination="698-Pj-sUl" id="yAV-80-xAQ"/>
@@ -388,8 +388,8 @@
             <objects>
                 <navigationController id="oHI-7v-cKw" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="1xj-sV-gJT"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PHG-hN-6Tg">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="PHG-hN-6Tg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

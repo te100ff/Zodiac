@@ -54,9 +54,9 @@ class LoginViewController: UIViewController {
                 welcomeVC.person = person
                 welcomeVC.delegate = self
             } else if let aboutVC = viewController as? AboutViewController {
-//                aboutVC.person = person
+                aboutVC.person = person
             } else if let zodiacVC = viewController as? ZodiacViewController {
-//                zodiacVC.person = person
+                zodiacVC.person = person
             }  else if let navigationVC = viewController as? UINavigationController {
                 let friendsVC = navigationVC.topViewController as! FriendsTableViewController
 //                friendsVC.person = person

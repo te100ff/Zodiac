@@ -24,6 +24,7 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        assignbackground()
     }
     
 }
@@ -40,5 +41,18 @@ extension AboutViewController {
         
         zodiacImageView.image = UIImage(named: String(person.zodiacEmoji))
         
+    }
+    
+    func assignbackground(){
+        let background = UIImage(named: "stars")
+        
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
     }
 }

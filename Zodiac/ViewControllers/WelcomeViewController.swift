@@ -21,15 +21,15 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         fullNameLabel.text = "Приветствую, \(person.fullName)!"
         assignbackground()
-        shadowSetup(element: fullNameLabel)
-        shadowSetup(element: welcomeText)
+        shadowSetup(element: fullNameLabel, radius: 20)
+        shadowSetup(element: welcomeText, radius: 15)
         
     }
     
 
     @IBAction func exitButtonAction(_ sender: Any) {
         dismiss(animated: true)
-        delegate.clearFields()
+        delegate.loginReturnSetup()
     }
 
     func assignbackground(){
@@ -45,9 +45,9 @@ class WelcomeViewController: UIViewController {
         self.view.sendSubviewToBack(imageView)
     }
     
-    func shadowSetup(element: UIView) {
+    func shadowSetup(element: UIView, radius: CGFloat) {
         element.layer.shadowOpacity = 1
-        element.layer.shadowRadius = 15
+        element.layer.shadowRadius = radius
         element.layer.shadowOffset = .zero
     }
     

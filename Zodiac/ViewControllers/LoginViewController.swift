@@ -8,7 +8,7 @@
 import UIKit
 // MARK: - Protocol
 protocol WelcomeViewControllerDelegate {
-    func clearFields()
+    func loginReturnSetup()
 }
 
 class LoginViewController: UIViewController {
@@ -209,10 +209,12 @@ extension LoginViewController {
 }
 
 extension LoginViewController: WelcomeViewControllerDelegate {
-    func clearFields() {
+    func loginReturnSetup() {
         nameTF.text = ""
         lastNameTF.text = ""
-        birthdayTF.text = ""       
+        birthdayTF.text = ""
+        okButton.alpha = 0.3
+        okButton.layer.shadowOpacity = 0
     }
     
     

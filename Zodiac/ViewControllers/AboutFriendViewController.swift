@@ -26,7 +26,7 @@ class AboutFriendViewController: UIViewController {
     private func setupOutlets() {
         friendNameLabel.text = friend.fullName
         friendBirthday.text = friend.dayOfBirth
-        friendZodiac.text = "\(friend.zodiacEmoji) \(friend.fullName)"
+        friendZodiac.text = "\(friend.zodiacEmoji) \(friend.zodiac.rawValue)"
         
         zodiacDescrtiptionTextView.text = friend.zodiacDiscription
     }

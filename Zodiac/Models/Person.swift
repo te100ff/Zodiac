@@ -134,7 +134,7 @@ struct Person {
         formatter.dateStyle = .long
         formatter.timeStyle = .none
         formatter.locale = Locale(identifier: "ru_RU")
-        formatter.dateFormat = "MMMM d y"
+        formatter.dateFormat = "d MMMM y"
         
         let dataNames = DataManager().names.shuffled()
         let dataSurnames = DataManager().surnames.shuffled()

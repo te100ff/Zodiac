@@ -404,13 +404,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Имя Фамилия" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TF-gZ-KU7">
-                                <rect key="frame" x="32" y="60" width="350" height="36"/>
+                                <rect key="frame" x="32" y="60" width="350" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.827829072" green="0.62046398169999994" blue="0.21110134059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="TYI-Sv-IHQ">
-                                <rect key="frame" x="16" y="112" width="382" height="619"/>
+                                <rect key="frame" x="16" y="113" width="382" height="618"/>
                                 <string key="text">Узнай, что готовит для тебя будущее! Бесплатный гороскоп на каждый день предупредит об удачных событиях или надвигающихся неприятностях.
 Следи за предсказаниями для своего знака и за гороскопами своих друзей! </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>

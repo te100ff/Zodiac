@@ -21,6 +21,8 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         fullNameLabel.text = "Приветствую, \(person.fullName)!"
         assignbackground()
+        shadowSetup(element: fullNameLabel)
+        shadowSetup(element: welcomeText)
         
     }
     
@@ -41,6 +43,12 @@ class WelcomeViewController: UIViewController {
         imageView.center = view.center
         view.addSubview(imageView)
         self.view.sendSubviewToBack(imageView)
+    }
+    
+    func shadowSetup(element: UIView) {
+        element.layer.shadowOpacity = 1
+        element.layer.shadowRadius = 15
+        element.layer.shadowOffset = .zero
     }
     
 }

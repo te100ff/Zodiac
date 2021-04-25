@@ -13,7 +13,6 @@ protocol WelcomeViewControllerDelegate {
 
 class LoginViewController: UIViewController {
     // MARK: - IB Outlets
-    
     @IBOutlet var fieldLabels: [UILabel]!
     
     @IBOutlet weak var nameTF: UITextField!
@@ -25,11 +24,10 @@ class LoginViewController: UIViewController {
     // MARK: - Private properties
     private let datePicker = UIDatePicker()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         okButton.alpha = 0.3
-        assignbackground()
+        setBackground()
         labelsSetup()
     }
     
@@ -47,7 +45,7 @@ class LoginViewController: UIViewController {
         let tabVC = segue.destination as! UITabBarController
         
         guard let viewControlers = tabVC.viewControllers else { return }
-        //        Раскомментируйте область своего VC
+        
         for viewController in viewControlers {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.person = person
@@ -174,7 +172,7 @@ extension LoginViewController {
         okButton.alpha = 1
     }
     
-    private func assignbackground(){
+    private func setBackground(){
         let background = UIImage(named: "stars")
         
         var imageView : UIImageView!

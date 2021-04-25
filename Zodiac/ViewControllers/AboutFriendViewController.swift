@@ -21,7 +21,7 @@ class AboutFriendViewController: UIViewController {
         super.viewDidLoad()
         
         setupOutlets()
-        assignbackground()
+        setBackground()
         backlightLabel(for: friendNameLabel)
     }
     
@@ -40,7 +40,7 @@ class AboutFriendViewController: UIViewController {
         label.layer.shadowOffset = .zero
     }
     
-    private func assignbackground(){
+    private func setBackground(){
         let background = UIImage(named: "stars")
         
         var imageView : UIImageView!

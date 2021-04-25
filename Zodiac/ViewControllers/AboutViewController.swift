@@ -24,15 +24,10 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        assignbackground()
+        setBackground()
     }
     
-}
-
-extension AboutViewController {
-    
     private func setupUI() {
-        
         informationLabel.text = person.fullName
         
         informationLabel.layer.shadowColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -46,12 +41,10 @@ extension AboutViewController {
         personZodiac.text = person.zodiac.rawValue
         
         zodiacImageView.image = UIImage(named: String(person.zodiacEmoji))
-        
-        
-        
+    
     }
     
-    private func assignbackground(){
+    private func setBackground(){
         let background = UIImage(named: "stars")
         
         var imageView : UIImageView!

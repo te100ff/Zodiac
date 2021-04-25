@@ -20,10 +20,10 @@ class ZodiacViewController: UIViewController {
         backlightLabel(for: zodiacLabel)
         zodiacLabel.text = "Ваш знак - \(person.zodiac.rawValue)"
         zodiacDescriptionTextView.text = person.zodiacDiscription
-        assignbackground()
+        setBackground()
     }
     
-    private func assignbackground(){
+    private func setBackground(){
         let background = UIImage(named: "stars")
         
         var imageView : UIImageView!

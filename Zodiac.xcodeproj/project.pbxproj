@@ -16,7 +16,6 @@
 		1414255026332A4100DC9735 /* AboutFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1414254F26332A4100DC9735 /* AboutFriendViewController.swift */; };
 		18398E562632B4FE00FBE2FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398E552632B4FE00FBE2FE /* AppDelegate.swift */; };
 		18398E582632B4FE00FBE2FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398E572632B4FE00FBE2FE /* SceneDelegate.swift */; };
-		18398E5A2632B4FE00FBE2FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18398E592632B4FE00FBE2FE /* ViewController.swift */; };
 		18398E5D2632B4FE00FBE2FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18398E5B2632B4FE00FBE2FE /* Main.storyboard */; };
 		18398E5F2632B4FF00FBE2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18398E5E2632B4FF00FBE2FE /* Assets.xcassets */; };
 		18398E622632B4FF00FBE2FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18398E602632B4FF00FBE2FE /* LaunchScreen.storyboard */; };
@@ -34,7 +33,6 @@
 		18398E522632B4FE00FBE2FE /* Zodiac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zodiac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18398E552632B4FE00FBE2FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18398E572632B4FE00FBE2FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18398E592632B4FE00FBE2FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18398E5C2632B4FE00FBE2FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18398E5E2632B4FF00FBE2FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18398E612632B4FF00FBE2FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 		141425332632C18300DC9735 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				18398E592632B4FE00FBE2FE /* ViewController.swift */,
 				18C5479026331AE400E8E72B /* LoginViewController.swift */,
 				141425432633298900DC9735 /* WelcomeViewController.swift */,
 				14142549263329E300DC9735 /* ZodiacViewController.swift */,
@@ -211,7 +208,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C5479126331AE400E8E72B /* LoginViewController.swift in Sources */,
-				18398E5A2632B4FE00FBE2FE /* ViewController.swift in Sources */,
 				141425402632C68500DC9735 /* DataManager.swift in Sources */,
 				18398E562632B4FE00FBE2FE /* AppDelegate.swift in Sources */,
 				1414254D26332A1900DC9735 /* FriendsTableViewController.swift in Sources */,

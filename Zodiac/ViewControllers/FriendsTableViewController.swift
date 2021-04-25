@@ -10,19 +10,19 @@ import UIKit
 class FriendsTableViewController: UITableViewController {
     
     private var friends = Person.getFriends()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupBackground()
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         friends.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "friend", for: indexPath)
@@ -54,5 +54,5 @@ class FriendsTableViewController: UITableViewController {
         let imageView = UIImageView(image: image)
         tableView.backgroundView = imageView
     }
-
+    
 }

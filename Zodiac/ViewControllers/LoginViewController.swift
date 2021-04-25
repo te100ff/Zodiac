@@ -56,9 +56,6 @@ class LoginViewController: UIViewController {
                 aboutVC.person = person
             } else if let zodiacVC = viewController as? ZodiacViewController {
                 zodiacVC.person = person
-            }  else if let navigationVC = viewController as? UINavigationController {
-                let friendsVC = navigationVC.topViewController as! FriendsTableViewController
-                //                friendsVC.person = person
             }
         }
     }

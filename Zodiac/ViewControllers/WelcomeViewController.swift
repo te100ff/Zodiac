@@ -26,12 +26,12 @@ class WelcomeViewController: UIViewController {
         
     }
     
-
+    
     @IBAction func exitButtonAction(_ sender: Any) {
         dismiss(animated: true)
         delegate.loginReturnSetup()
     }
-
+    
     func assignbackground(){
         let background = UIImage(named: "stars")
         

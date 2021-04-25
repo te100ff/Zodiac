@@ -34,5 +34,5 @@ class ZodiacViewController: UIViewController {
         self.view.sendSubviewToBack(imageView)
     }
     
-
+    
 }

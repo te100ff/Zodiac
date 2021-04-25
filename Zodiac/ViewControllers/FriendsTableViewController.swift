@@ -13,7 +13,8 @@ class FriendsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupBackground()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -27,6 +28,7 @@ class FriendsTableViewController: UITableViewController {
 //        // #warning Incomplete implementation, return the number of sections
 //        return 0
 //    }
+    
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -40,8 +42,11 @@ class FriendsTableViewController: UITableViewController {
         let friend = friends[indexPath.row]
         
         var content = cell.defaultContentConfiguration()
+        content.textProperties.font = UIFont(name: "Futura", size: 30)!  // опасно!
+        content.textProperties.color = .white
         content.text = "\(friend.zodiacEmoji) \(friend.fullName)"
         cell.contentConfiguration = content
+        cell.backgroundColor = .clear
 
         return cell
     }
@@ -53,6 +58,14 @@ class FriendsTableViewController: UITableViewController {
         let friend = friends[indexPath.row]
         aboutFriendVC.friend = friend
         
+    }
+    
+    
+    private func setupBackground() {
+        
+        let image = UIImage(named: "stars")
+        let imageView = UIImageView(image: image)
+        tableView.backgroundView = imageView
     }
 
 }

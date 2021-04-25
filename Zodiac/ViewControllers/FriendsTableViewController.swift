@@ -15,24 +15,12 @@ class FriendsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         setupBackground()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
-    
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return friends.count
+        friends.count
     }
 
     
@@ -42,12 +30,12 @@ class FriendsTableViewController: UITableViewController {
         let friend = friends[indexPath.row]
         
         var content = cell.defaultContentConfiguration()
-        content.textProperties.font = UIFont(name: "Futura", size: 30)!  // опасно!
+        content.textProperties.font = UIFont(name: "Futura", size: 25)!  // опасно!
         content.textProperties.color = .white
         content.text = "\(friend.zodiacEmoji) \(friend.fullName)"
         cell.contentConfiguration = content
         cell.backgroundColor = .clear
-
+        
         return cell
     }
     
@@ -59,7 +47,6 @@ class FriendsTableViewController: UITableViewController {
         aboutFriendVC.friend = friend
         
     }
-    
     
     private func setupBackground() {
         

@@ -3,7 +3,7 @@
 //  Zodiac
 //
 //  Created by Виталий Оранский on 23.04.2021.
-//  Edited by Noskov Philip on 24.04.2021
+//  Edited by Zodiac crew on 24.04.2021
 
 import UIKit
 

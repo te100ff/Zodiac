@@ -2,7 +2,7 @@
 //  DataManager.swift
 //  Zodiac
 //
-//  Created by Виталий Оранский on 23.04.2021.
+//  Created by Zodiac crew on 23.04.2021.
 //
 
 import Foundation

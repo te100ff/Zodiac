@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  Zodiac
 //
-//  Created by Stanislav Testov on 23.04.2021.
+//  Created by Zodiac crew on 23.04.2021.
 //
 
 import UIKit

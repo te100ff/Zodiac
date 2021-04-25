@@ -19,8 +19,10 @@ class AboutFriendViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupOutlets()
         assignbackground()
+        backlightLabel(for: friendNameLabel)
     }
     
     private func setupOutlets() {
@@ -31,7 +33,14 @@ class AboutFriendViewController: UIViewController {
         zodiacDescrtiptionTextView.text = friend.zodiacDiscription
     }
     
-    func assignbackground(){
+    private func backlightLabel(for label: UILabel) {
+        label.layer.shadowColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        label.layer.shadowOpacity = 1
+        label.layer.shadowRadius = 15
+        label.layer.shadowOffset = .zero
+    }
+    
+    private func assignbackground(){
         let background = UIImage(named: "stars")
         
         var imageView : UIImageView!

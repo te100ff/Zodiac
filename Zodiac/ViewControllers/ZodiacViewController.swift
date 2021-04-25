@@ -16,12 +16,14 @@ class ZodiacViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        zodiacLabel.text = "Вы \(person.zodiac.rawValue)"
+        
+        backlightLabel(for: zodiacLabel)
+        zodiacLabel.text = "Ваш знак - \(person.zodiac.rawValue)"
         zodiacDescriptionTextView.text = person.zodiacDiscription
         assignbackground()
     }
     
-    func assignbackground(){
+    private func assignbackground(){
         let background = UIImage(named: "stars")
         
         var imageView : UIImageView!
@@ -34,5 +36,11 @@ class ZodiacViewController: UIViewController {
         self.view.sendSubviewToBack(imageView)
     }
     
+    private func backlightLabel(for label: UILabel) {
+        label.layer.shadowColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        label.layer.shadowOpacity = 1
+        label.layer.shadowRadius = 15
+        label.layer.shadowOffset = .zero
+    }
     
 }

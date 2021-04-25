@@ -34,6 +34,12 @@ extension AboutViewController {
     private func setupUI() {
         
         informationLabel.text = person.fullName
+        
+        informationLabel.layer.shadowColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        informationLabel.layer.shadowOpacity = 1
+        informationLabel.layer.shadowRadius = 15
+        informationLabel.layer.shadowOffset = .zero
+        
         personName.text = person.name
         personLastName.text = person.lastName
         personDateOfBirth.text = person.dayOfBirth
@@ -41,9 +47,11 @@ extension AboutViewController {
         
         zodiacImageView.image = UIImage(named: String(person.zodiacEmoji))
         
+        
+        
     }
     
-    func assignbackground(){
+    private func assignbackground(){
         let background = UIImage(named: "stars")
         
         var imageView : UIImageView!

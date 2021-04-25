@@ -19,7 +19,8 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fullNameLabel.text = "Приветствую, \(person.fullName)!"
+        backlightLabel(for: fullNameLabel)
+        fullNameLabel.text = "Привет, \(person.fullName)!"
         assignbackground()
         shadowSetup(element: fullNameLabel, radius: 20)
         shadowSetup(element: welcomeText, radius: 15)
@@ -32,7 +33,7 @@ class WelcomeViewController: UIViewController {
         delegate.loginReturnSetup()
     }
     
-    func assignbackground(){
+    private func assignbackground(){
         let background = UIImage(named: "stars")
         
         var imageView : UIImageView!
@@ -45,10 +46,16 @@ class WelcomeViewController: UIViewController {
         self.view.sendSubviewToBack(imageView)
     }
     
-    func shadowSetup(element: UIView, radius: CGFloat) {
+    private func shadowSetup(element: UIView, radius: CGFloat) {
         element.layer.shadowOpacity = 1
         element.layer.shadowRadius = radius
         element.layer.shadowOffset = .zero
     }
     
+    private func backlightLabel(for label: UILabel) {
+        label.layer.shadowColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        label.layer.shadowOpacity = 1
+        label.layer.shadowRadius = 15
+        label.layer.shadowOffset = .zero
+    }
 }

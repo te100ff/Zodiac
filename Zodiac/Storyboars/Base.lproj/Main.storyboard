@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,20 +13,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="bEq-Mg-CJM">
-                                <rect key="frame" x="16" y="84" width="382" height="469"/>
+                                <rect key="frame" x="16" y="84.000000000000028" width="358" height="439.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Gz-Zn-aFI">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="46.666666666666664"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                         <color key="textColor" systemColor="systemGray6Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K1K-M0-zj1">
-                                        <rect key="frame" x="0.0" y="83.5" width="382" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="78.666666666666657" width="358" height="46.666666666666657"/>
                                         <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,13 +37,13 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Qz-Do-qaf">
-                                        <rect key="frame" x="0.0" y="167" width="382" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="157.33333333333334" width="358" height="46.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                         <color key="textColor" systemColor="systemGray6Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VuC-En-Vd7">
-                                        <rect key="frame" x="0.0" y="250.5" width="382" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="235.66666666666666" width="358" height="46.666666666666657"/>
                                         <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,13 +54,13 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="k53-xa-FL1">
-                                        <rect key="frame" x="0.0" y="334" width="382" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="314.33333333333331" width="358" height="46.666666666666686"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                         <color key="textColor" systemColor="systemGray6Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XMf-2o-bl5">
-                                        <rect key="frame" x="0.0" y="417.5" width="382" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="393" width="358" height="46.666666666666686"/>
                                         <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,7 +76,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrS-si-ktR">
-                                <rect key="frame" x="129.5" y="764" width="155" height="50"/>
+                                <rect key="frame" x="117.66666666666669" y="712" width="155" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="155" id="RWD-CO-Vbf"/>
                                     <constraint firstAttribute="height" constant="50" id="tfB-Sv-TRU"/>
@@ -115,49 +115,49 @@
             </objects>
             <point key="canvasLocation" x="-1284.0579710144928" y="45.535714285714285"/>
         </scene>
-        <!--Инфо-->
+        <!--Мой профиль-->
         <scene sceneID="6aO-Fm-FKH">
             <objects>
                 <viewController id="szW-to-HQx" customClass="AboutViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lMY-S0-Xka">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="L7h-BK-7Vh">
-                                <rect key="frame" x="16" y="76" width="382" height="705"/>
+                                <rect key="frame" x="16" y="60" width="358" height="287"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Информация" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8u-xA-30e">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="39"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="39"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
-                                        <color key="textColor" systemColor="systemIndigoColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="W6R-ZY-JcN">
-                                        <rect key="frame" x="0.0" y="71" width="382" height="216"/>
+                                        <rect key="frame" x="0.0" y="71" width="358" height="216"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0m4-Qa-ofG">
-                                                <rect key="frame" x="0.0" y="0.0" width="188.5" height="216"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="216"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="A5n-t9-2fV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="77.5" height="39"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="39"/>
                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9yC-zI-z0E">
-                                                        <rect key="frame" x="0.0" y="59" width="163.5" height="39"/>
-                                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="unI-Fl-z3Y">
-                                                        <rect key="frame" x="0.0" y="118" width="188.5" height="39"/>
+                                                        <rect key="frame" x="0.0" y="59" width="163.66666666666666" height="39"/>
                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Знак:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="y86-4r-oD0">
-                                                        <rect key="frame" x="0.0" y="177" width="88" height="39"/>
+                                                        <rect key="frame" x="0.0" y="118" width="87.666666666666671" height="39"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="unI-Fl-z3Y">
+                                                        <rect key="frame" x="0.0" y="177" width="176.66666666666666" height="39"/>
                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -165,28 +165,28 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pdA-ZP-sDg">
-                                                <rect key="frame" x="193.5" y="0.0" width="188.5" height="216"/>
+                                                <rect key="frame" x="181.66666666666663" y="0.0" width="176.33333333333337" height="216"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Себастьян" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hG5-DH-HNg">
-                                                        <rect key="frame" x="23.5" y="0.0" width="165" height="39"/>
+                                                        <rect key="frame" x="11.333333333333343" y="0.0" width="165" height="39"/>
                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Юзердатов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="qQO-z2-32Q">
-                                                        <rect key="frame" x="2.5" y="59" width="186" height="39"/>
-                                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 апреля 1999 г." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gLl-7L-re9">
-                                                        <rect key="frame" x="0.0" y="118" width="188.5" height="39"/>
+                                                        <rect key="frame" x="0.0" y="59" width="176.33333333333334" height="39"/>
                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Водолей" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="pjx-pP-ojf">
-                                                        <rect key="frame" x="43.5" y="177" width="145" height="39"/>
+                                                        <rect key="frame" x="31.333333333333343" y="118" width="145" height="39"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 апреля 1999 г." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gLl-7L-re9">
+                                                        <rect key="frame" x="0.0" y="177" width="176.33333333333334" height="39"/>
                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -195,23 +195,29 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="aries_PNG11" translatesAutoresizingMaskIntoConstraints="NO" id="nqn-gF-VIy">
-                                        <rect key="frame" x="0.0" y="319" width="382" height="386"/>
-                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                                    </imageView>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="aries_PNG11" translatesAutoresizingMaskIntoConstraints="NO" id="nqn-gF-VIy">
+                                <rect key="frame" x="105" y="372" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="49k-rh-cQT"/>
+                                    <constraint firstAttribute="width" constant="180" id="foo-gZ-RZc"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Cn-iF-2lZ"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="0Cn-iF-2lZ" firstAttribute="bottom" secondItem="L7h-BK-7Vh" secondAttribute="bottom" constant="32" id="JEN-Ry-yRc"/>
-                            <constraint firstItem="L7h-BK-7Vh" firstAttribute="top" secondItem="0Cn-iF-2lZ" secondAttribute="top" constant="32" id="V0v-G8-zZb"/>
-                            <constraint firstItem="L7h-BK-7Vh" firstAttribute="leading" secondItem="0Cn-iF-2lZ" secondAttribute="leading" constant="16" id="hMc-2k-IhU"/>
-                            <constraint firstItem="0Cn-iF-2lZ" firstAttribute="trailing" secondItem="L7h-BK-7Vh" secondAttribute="trailing" constant="16" id="nni-dm-IA8"/>
+                            <constraint firstItem="L7h-BK-7Vh" firstAttribute="top" secondItem="0Cn-iF-2lZ" secondAttribute="top" constant="16" id="4uq-Cf-IfN"/>
+                            <constraint firstItem="nqn-gF-VIy" firstAttribute="centerX" secondItem="lMY-S0-Xka" secondAttribute="centerX" id="6Nw-T1-QTh"/>
+                            <constraint firstItem="L7h-BK-7Vh" firstAttribute="leading" secondItem="lMY-S0-Xka" secondAttribute="leading" constant="16" id="JNp-SP-Sjn"/>
+                            <constraint firstAttribute="trailing" secondItem="L7h-BK-7Vh" secondAttribute="trailing" constant="16" id="MG8-hD-coM"/>
+                            <constraint firstItem="L7h-BK-7Vh" firstAttribute="centerX" secondItem="lMY-S0-Xka" secondAttribute="centerX" id="QcN-Ln-5vk"/>
+                            <constraint firstItem="nqn-gF-VIy" firstAttribute="top" secondItem="L7h-BK-7Vh" secondAttribute="bottom" constant="25" id="rsg-b2-JIn"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Инфо" image="info.circle.fill" catalog="system" id="f5N-HT-PUB"/>
+                    <tabBarItem key="tabBarItem" title="Мой профиль" image="person.fill" catalog="system" id="f5N-HT-PUB"/>
                     <connections>
                         <outlet property="informationLabel" destination="V8u-xA-30e" id="6zE-2w-rp1"/>
                         <outlet property="personDateOfBirth" destination="gLl-7L-re9" id="HWq-zT-cYQ"/>
@@ -226,25 +232,25 @@
             </objects>
             <point key="canvasLocation" x="328.98550724637681" y="-338.16964285714283"/>
         </scene>
-        <!--Знак-->
+        <!--Мой гороскоп-->
         <scene sceneID="gu8-Un-zfZ">
             <objects>
                 <viewController id="jhL-vE-nxt" customClass="ZodiacViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hzR-HF-NLD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Знак зодиака" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irL-nG-oyd">
-                                <rect key="frame" x="74.5" y="60" width="265.5" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <color key="textColor" systemColor="systemIndigoColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Знак зодиака" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="irL-nG-oyd">
+                                <rect key="frame" x="82.666666666666686" y="60" width="225" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iAy-D9-7AO">
-                                <rect key="frame" x="16" y="140" width="382" height="673"/>
+                                <rect key="frame" x="16" y="131" width="358" height="630"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" red="0.827829072" green="0.62046398169999994" blue="0.21110134059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -259,7 +265,7 @@
                             <constraint firstItem="iAy-D9-7AO" firstAttribute="leading" secondItem="sEO-Re-zaY" secondAttribute="leading" constant="16" id="udO-M2-Lxc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Знак" image="sparkles" catalog="system" id="Tq0-in-8ah"/>
+                    <tabBarItem key="tabBarItem" title="Мой гороскоп" image="sparkles" catalog="system" id="Tq0-in-8ah"/>
                     <connections>
                         <outlet property="zodiacDescriptionTextView" destination="iAy-D9-7AO" id="GRE-1j-GXC"/>
                         <outlet property="zodiacLabel" destination="irL-nG-oyd" id="Bzj-vT-Q8x"/>
@@ -269,20 +275,20 @@
             </objects>
             <point key="canvasLocation" x="328.98550724637681" y="358.92857142857139"/>
         </scene>
-        <!--Друзья-->
+        <!--Мои друзья-->
         <scene sceneID="h8A-XK-I0r">
             <objects>
                 <tableViewController id="99G-8n-MLZ" customClass="FriendsTableViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="k8g-lD-CKv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="friend" id="Exu-13-mbS">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Exu-13-mbS" id="hi0-Sf-sir">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -295,7 +301,7 @@
                             <outlet property="delegate" destination="99G-8n-MLZ" id="UTz-Ih-ibK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Друзья" id="WY6-8v-qq2"/>
+                    <navigationItem key="navigationItem" title="Мои друзья" id="WY6-8v-qq2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCP-p8-o3m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -306,37 +312,37 @@
             <objects>
                 <viewController id="JCC-X3-6sS" customClass="AboutFriendViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qau-ym-ikC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="zhL-Ae-m4C">
-                                <rect key="frame" x="16" y="104" width="382" height="169"/>
+                                <rect key="frame" x="16" y="104.00000000000001" width="358" height="156.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя фамилия друга" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="698-Pj-sUl">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="39"/>
-                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
-                                        <color key="textColor" systemColor="systemIndigoColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения друга" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zo5-ah-gNl">
-                                        <rect key="frame" x="0.0" y="65" width="382" height="39"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="39"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения друга" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zo5-ah-gNl">
+                                        <rect key="frame" x="0.0" y="65" width="358" height="32.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Знак зодиака" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kk3-aQ-8Sp">
-                                        <rect key="frame" x="0.0" y="130" width="382" height="39"/>
-                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                        <rect key="frame" x="0.0" y="123.66666666666667" width="358" height="32.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kqi-lv-Psh">
-                                <rect key="frame" x="16" y="289" width="382" height="508"/>
+                                <rect key="frame" x="16" y="276.33333333333326" width="358" height="468.66666666666674"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" red="0.85918217900000005" green="0.69522440429999999" blue="0.27283269170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -364,16 +370,17 @@
             </objects>
             <point key="canvasLocation" x="1128.985507246377" y="1020.5357142857142"/>
         </scene>
-        <!--Друзья-->
+        <!--Мои друзья-->
         <scene sceneID="nvQ-zp-h4E">
             <objects>
                 <navigationController id="oHI-7v-cKw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Друзья" image="person.3.fill" catalog="system" id="1xj-sV-gJT"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="PHG-hN-6Tg">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <tabBarItem key="tabBarItem" title="Мои друзья" image="person.3.fill" catalog="system" id="1xj-sV-gJT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="PHG-hN-6Tg">
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" systemColor="systemIndigoColor"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -384,23 +391,23 @@
             </objects>
             <point key="canvasLocation" x="-517" y="1021"/>
         </scene>
-        <!--Старт-->
+        <!--Главная-->
         <scene sceneID="yuL-uQ-DMv">
             <objects>
                 <viewController id="Rq9-It-SVG" customClass="WelcomeViewController" customModule="Zodiac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hm0-eK-RHR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Имя Фамилия" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TF-gZ-KU7">
-                                <rect key="frame" x="32" y="60" width="350" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Имя Фамилия" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TF-gZ-KU7">
+                                <rect key="frame" x="32" y="60" width="326" height="40"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
-                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="TYI-Sv-IHQ">
-                                <rect key="frame" x="16" y="116" width="382" height="615"/>
+                                <rect key="frame" x="16" y="116" width="358" height="563"/>
                                 <string key="text">Узнай, что готовит для тебя будущее! Бесплатный гороскоп на каждый день предупредит об удачных событиях или надвигающихся неприятностях.
 Следи за предсказаниями для своего знака и за гороскопами своих друзей! </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -409,7 +416,7 @@
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z17-DX-HRF">
-                                <rect key="frame" x="141.5" y="747" width="131" height="50"/>
+                                <rect key="frame" x="129.66666666666666" y="695" width="130.99999999999997" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="HNR-U6-ASp"/>
                                     <constraint firstAttribute="height" constant="50" id="z4g-Ke-LIb"/>
@@ -437,7 +444,7 @@
                             <constraint firstItem="TYI-Sv-IHQ" firstAttribute="top" secondItem="5TF-gZ-KU7" secondAttribute="bottom" constant="16" id="zvf-dF-Q9w"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Старт" image="arrowtriangle.right.fill" catalog="system" id="pbA-my-1rz"/>
+                    <tabBarItem key="tabBarItem" title="Главная" image="star.fill" catalog="system" id="pbA-my-1rz"/>
                     <connections>
                         <outlet property="exitButton" destination="z17-DX-HRF" id="BA6-cC-s1b"/>
                         <outlet property="fullNameLabel" destination="5TF-gZ-KU7" id="cph-ee-bFk"/>
@@ -452,10 +459,11 @@
         <scene sceneID="tjU-Xv-WAB">
             <objects>
                 <tabBarController id="p7d-gH-gLb" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Z0-We-xyv">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="0Z0-We-xyv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="Rq9-It-SVG" kind="relationship" relationship="viewControllers" id="PDp-Hp-xNH"/>
@@ -471,10 +479,11 @@
     </scenes>
     <resources>
         <image name="aries_PNG11" width="700" height="745"/>
-        <image name="arrowtriangle.right.fill" catalog="system" width="128" height="113"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="sparkles" catalog="system" width="112" height="128"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -484,11 +493,11 @@
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

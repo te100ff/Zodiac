@@ -174,7 +174,7 @@ extension LoginViewController {
         okButton.alpha = 1
     }
     
-    func assignbackground(){
+    private func assignbackground(){
         let background = UIImage(named: "stars")
         
         var imageView : UIImageView!
@@ -187,7 +187,7 @@ extension LoginViewController {
         self.view.sendSubviewToBack(imageView)
     }
     
-    func labelsSetup() {
+    private func labelsSetup() {
         for label in fieldLabels {
             label.layer.shadowColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             label.layer.shadowOpacity = 1

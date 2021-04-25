@@ -28,6 +28,106 @@ struct Person {
     var zodiacEmoji: Character {
         getZodiacEmoji(zodiac: zodiac)
     }
+
+    // Вернет знак Зодиака как строку из Date
+    private func getZodiak(dayOfBirth: Date) -> String {
+    
+            let zodiakDic = ["Овен": ["03/21", "04/20"], "Телец": ["04/21", "05/21"],
+                             "Близнецы": ["05/22", "06/21"], "Рак": ["06/22", "07/22"],
+                             "Лев": ["07/23", "08/21"], "Дева": ["08/22", "09/23"],
+                             "Весы": ["09/24", "10/23"], "Скорпион": ["10/24", "11/22"],
+                             "Стрелец": ["11/23", "12/22"],
+                             "Водолей": ["01/21", "02/19"], "Рыбы": ["02/20", "03/20"]]
+    
+            let formatter = DateFormatter()
+            formatter.dateFormat = "MM/dd"
+    
+            let calendar = Calendar.current
+            let dateComponents = Calendar.current.dateComponents([.month, .day], from: dayOfBirth)
+            let shortDate = calendar.date(from: dateComponents)
+    
+            for zodiak in zodiakDic {
+    
+                let dateMin = formatter.date(from: zodiak.value.first!)
+                let minDateCompontnts = Calendar.current.dateComponents([.month, .day], from: dateMin!)
+                let realMindate = calendar.date(from: minDateCompontnts)
+                let dateMax = formatter.date(from: zodiak.value.last!)
+                let maxDateCompontnts = Calendar.current.dateComponents([.month, .day], from: dateMax!)
+                let realMaxdate = calendar.date(from: maxDateCompontnts)
+    
+                if (realMindate!...realMaxdate!).contains(shortDate!) {
+                    return zodiak.key
+                }
+            }
+            return "Козерог"
+        }
+    
+    // Вернет Emoji знака Зодиака как Character
+    private func getZodiacEmoji(zodiac: ZodiacSign) -> Character {
+        
+        switch zodiac {
+        
+        case .aries:
+            return "♈️"
+        case .taurus:
+            return "♉️"
+        case .gemini:
+            return "♊️"
+        case .cancer:
+            return "♋️"
+        case .leo:
+            return "♌️"
+        case .virgo:
+            return "♍️"
+        case .libra:
+            return "♎️"
+        case .scorpio:
+            return "♏️"
+        case .sagittarius:
+            return "♐️"
+        case .capricorn:
+            return "♑️"
+        case .aquarius:
+            return "♒️"
+        case .pisces:
+            return "♓️"
+        }
+    }
+    
+    // Вернет 10 друзей с рандомными датами
+    static func getFriends() -> [Person]{
+        var persons = [Person]()
+        
+        var randomInt = 0.0
+        var date = Date(timeIntervalSince1970: randomInt)
+        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        formatter.timeStyle = .none
+        formatter.locale = Locale(identifier: "ru_RU")
+        formatter.dateFormat = "d MMMM y"
+        
+        let dataNames = DataManager().names.shuffled()
+        let dataSurnames = DataManager().surnames.shuffled()
+        
+        for index in 0..<min(dataNames.count, dataSurnames.count) {
+            randomInt = Double.random(in: 1...1600000000)
+            date = Date(timeIntervalSince1970: randomInt)
+            
+            
+            
+            let beautifulDate = formatter.string(from: date)
+            
+            
+            persons.append(Person(name: dataNames[index],
+                                  lastName: dataSurnames[index],
+                                  dayOfBirth: beautifulDate,
+                                  dateOfBirth: date))
+        }
+        
+        return persons
+    }
+    
     // Вернет описание знака Зодиака как строку
     private func getZodiacDiscription(zodiac: ZodiacSign) -> String {
         
@@ -149,102 +249,6 @@ struct Person {
                 Водолеи любят направлять людей на путь истинный. Они знают все и обо всем на свете. Если вы хотите знать, на что похожа еда на Сатурне – спросите Водолея. Им наплевать на всех, они с рождения наделены колоссальным самомнением. Большинство рок-звезд – Водолеи.
                 """
         }
-    }
-    // Вернет знак Зодиака как строку из Date
-    private func getZodiak(dayOfBirth: Date) -> String {
-    
-            let zodiakDic = ["Овен": ["03/21", "04/20"], "Телец": ["04/21", "05/21"],
-                             "Близнецы": ["05/22", "06/21"], "Рак": ["06/22", "07/22"],
-                             "Лев": ["07/23", "08/21"], "Дева": ["08/22", "09/23"],
-                             "Весы": ["09/24", "10/23"], "Скорпион": ["10/24", "11/22"],
-                             "Стрелец": ["11/23", "12/22"],
-                             "Водолей": ["01/21", "02/19"], "Рыбы": ["02/20", "03/20"]]
-    
-            let formatter = DateFormatter()
-            formatter.dateFormat = "MM/dd"
-    
-            let calendar = Calendar.current
-            let dateComponents = Calendar.current.dateComponents([.month, .day], from: dayOfBirth)
-            let shortDate = calendar.date(from: dateComponents)
-    
-            for zodiak in zodiakDic {
-    
-                let dateMin = formatter.date(from: zodiak.value.first!)
-                let minDateCompontnts = Calendar.current.dateComponents([.month, .day], from: dateMin!)
-                let realMindate = calendar.date(from: minDateCompontnts)
-                let dateMax = formatter.date(from: zodiak.value.last!)
-                let maxDateCompontnts = Calendar.current.dateComponents([.month, .day], from: dateMax!)
-                let realMaxdate = calendar.date(from: maxDateCompontnts)
-    
-                if (realMindate!...realMaxdate!).contains(shortDate!) {
-                    return zodiak.key
-                }
-            }
-            return "Козерог"
-        }
-    // Вернет Emoji знака Зодиака как Character
-    private func getZodiacEmoji(zodiac: ZodiacSign) -> Character {
-        
-        switch zodiac {
-        
-        case .aries:
-            return "♈️"
-        case .taurus:
-            return "♉️"
-        case .gemini:
-            return "♊️"
-        case .cancer:
-            return "♋️"
-        case .leo:
-            return "♌️"
-        case .virgo:
-            return "♍️"
-        case .libra:
-            return "♎️"
-        case .scorpio:
-            return "♏️"
-        case .sagittarius:
-            return "♐️"
-        case .capricorn:
-            return "♑️"
-        case .aquarius:
-            return "♒️"
-        case .pisces:
-            return "♓️"
-        }
-    }
-    // Вернет 10 друзей с рандомными датами
-    static func getFriends() -> [Person]{
-        var persons = [Person]()
-        
-        var randomInt = 0.0
-        var date = Date(timeIntervalSince1970: randomInt)
-        
-        let formatter = DateFormatter()
-        formatter.dateStyle = .long
-        formatter.timeStyle = .none
-        formatter.locale = Locale(identifier: "ru_RU")
-        formatter.dateFormat = "d MMMM y"
-        
-        let dataNames = DataManager().names.shuffled()
-        let dataSurnames = DataManager().surnames.shuffled()
-        
-        for index in 0..<min(dataNames.count, dataSurnames.count) {
-            randomInt = Double.random(in: 1...1600000000)
-            date = Date(timeIntervalSince1970: randomInt)
-            
-            
-            
-            let beautifulDate = formatter.string(from: date)
-            
-            
-            persons.append(Person(name: dataNames[index],
-                                  lastName: dataSurnames[index],
-                                  dayOfBirth: beautifulDate,
-                                  dateOfBirth: date))
-        }
-        
-        return persons
     }
     
     
